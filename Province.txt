@@ -1,0 +1,63 @@
+list.append("An Giang") x
+list.append("Bà Rịa -Vũng Tàu") x
+list.append("Bắc Giang") x
+list.append("Bắc Kạn") x
+list.append("Bạc Liêu")
+list.append("Bắc Ninh") x
+list.append("Bến Tre") x
+list.append("Bình Định") x
+list.append("Bình Dương") x
+list.append("Bình Phước") x
+list.append("Bình Thuận") x
+list.append("Cà Mau") x
+list.append("Cần Thơn") x
+list.append("Cao Bằng") x
+list.append("Đà Nẵng")
+list.append("Đăk Lăk") x
+list.append("Đăk Nông") x
+list.append("Điện Biên") x
+list.append("Đồng Nai") x
+list.append("Đồng Tháp") x
+list.append("Gia Lai") x
+list.append("Hà Giang") x
+list.append("Hà Nam") x
+list.append("Hà Nội") x
+list.append("Hà Tĩnh") x
+list.append("Hải Dương") x
+list.append("Hải Phòng") x
+list.append("Hậu Giang")
+list.append("Hòa Bình") x
+list.append("Hưng Yên")
+list.append("Khánh Hòa") x
+list.append("Kien Giang") x
+list.append("Kon Tum") x
+list.append("Lai Châu") x
+list.append("Lâm Đồng") x
+list.append("Lạng Sơn") x
+list.append("Lào Cai") x
+list.append("Long An") x
+list.append("Nam Định") x
+list.append("Nghệ An") x
+list.append("Ninh Bình") x
+list.append("Ninh Thuận") x
+list.append("Phú Thọ") x
+list.append("Phú Yên") x
+list.append("Quản Bình")
+list.append("Quảng Nam") x
+list.append("Quảng Ngãi") x
+list.append("Quảng Ninh") x
+list.append("Quảng Trị")
+list.append("Sóc Trăng") x
+list.append("Sơn La") x
+list.append("Tây Ninh") x
+list.append("Thái Bình") x
+list.append("Thái Nguyên") x
+list.append("Thanh Hóa") x
+list.append("Thừa Thiên Huế")
+list.append("Tiền Giang") x
+list.append("TP. Hồ Chí Minh") x
+list.append("Trà Vinh") x
+list.append("Tuyên Quang") x
+list.append("Vĩnh Long") x
+list.append("Vĩnh Phúc") x
+list.append("Yên Bái") x
