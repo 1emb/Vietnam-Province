@@ -1,5 +1,7 @@
 import json
 
+
+#ID and provinces linking
 list = []
 
 list.append("An Giang")
@@ -14,7 +16,7 @@ list.append("Bình Dương")
 list.append("Bình Phước")
 list.append("Bình Thuận")
 list.append("Cà Mau")
-list.append("Cần Thơn")
+list.append("Cần Thơ")
 list.append("Cao Bằng")
 list.append("Đà Nẵng")
 list.append("Đăk Lăk")
@@ -46,7 +48,7 @@ list.append("Ninh Bình")
 list.append("Ninh Thuận")
 list.append("Phú Thọ")
 list.append("Phú Yên")
-list.append("Quản Bình")
+list.append("Quảng Bình")
 list.append("Quảng Nam")
 list.append("Quảng Ngãi")
 list.append("Quảng Ninh")
@@ -66,27 +68,28 @@ list.append("Vĩnh Long")
 list.append("Vĩnh Phúc")
 list.append("Yên Bái")
 
-dic = {}
+dic = {    
+}
 for i in range(0, len(list)):
     dic[list[i]] = i+1 
 VN = {}
-VN["Province"] = []
-
-#for i in range(0, len(list)):
-#    VN["Province"][list[i]] = {}
+VN["Province"] = {}
+for i in range(0, len(list)):
+    VN["Province"][list[i]] = {}
 
 def link(provinceName, provinceNeighbor):
-#    try:
-#        VN["Province"][provinceName][list.index(provinceNeighbor)] = provinceNeighbor            
-#    except:
-#        pass
-#    
-#    try:
-#        VN["Province"][provinceNeighbor][list.index(provinceName)] = provinceName
-#    except:
-#        pass
+    try:
+        VN["Province"][provinceName][list.index(provinceNeighbor)] = provinceNeighbor            
+    except:
+        pass
+    
+    try:
+        VN["Province"][provinceNeighbor][list.index(provinceName)] = provinceName
+    except:
+        pass
     
     
+#neighbor linking:   
 a1 = "Điện Biên"
 link(a1, "Lai Châu")
 link(a1, "Sơn La")
@@ -198,7 +201,7 @@ link(a24, "Hà Tĩnh")
 a = "Hà Tĩnh"
 link(a, "Quảng Bình")
 
-a = "Quản Bình"
+a = "Quảng Bình"
 link(a, "Quảng Trị")
 
 a = "Quảng Trị"
@@ -296,10 +299,10 @@ link(a, "Tiền Giang")
 a = "An Giang"
 link(a, "Kien Giang")
 link(a, "Đồng Tháp")
-link(a, "Cần Thơn")
+link(a, "Cần Thơ")
 
 a = "Đồng Tháp"
-link(a, "Cần Thơn")
+link(a, "Cần Thơ")
 link(a, "Vĩnh Long")
 link(a, "Tiền Giang")
 
@@ -309,12 +312,12 @@ link(a, "Bến Tre")
 link(a, "Tiền Giang")
 
 a = "Kien Giang"
-link(a, "Cần Thơn")
+link(a, "Cần Thơ")
 link(a, "Bạc Liêu")
 link(a, "Hậu Giang")
 link(a, "Cà Mau")
 
-a = "Cần Thơn"
+a = "Cần Thơ"
 link(a, "Hậu Giang")
 link(a, "Vĩnh Long")
 
@@ -339,17 +342,29 @@ link(a, "Trà Vinh")
 a = "Bạc Liêu"
 link(a, "Cà Mau")
 
+#nicer formating for the list
+
+d = {}
+l = []
+for i in VN["Province"]:
+    diction = {}
+    diction["name"] = i
+    diction["neighbor"] = {}
+    for j in VN["Province"][i]:
+        diction["neighbor"][j] = VN["Province"][i][j]
+        
+    l.append(diction)
+d["provinces"] = l
+
+#list output to file
+#txt file:
 f = open("VNProvinceBorderLinking.txt", "w", encoding = "utf-8")
-f.write(str(VN))
+f.write(str(d))
 f.close()
 
-json = json.dumps(VN)
+#JSON file:
+json = json.dumps(d)
 f = open("VNProvinceBorderLinking.json","w")
 f.write(json)
 f.close()
-
-
-print(VN)
-#print(list.index("Thái Bình"))
-#print(list[52])
 
