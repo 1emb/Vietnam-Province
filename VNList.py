@@ -197,7 +197,7 @@ link(a24, "Hà Tĩnh")
 a = "Hà Tĩnh"
 link(a, "Quảng Bình")
 
-a = "Quảng Bình"
+a = "Quản Bình"
 link(a, "Quảng Trị")
 
 a = "Quảng Trị"
