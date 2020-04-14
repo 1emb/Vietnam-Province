@@ -35,7 +35,7 @@ list.append("Hậu Giang")
 list.append("Hòa Bình")
 list.append("Hưng Yên")
 list.append("Khánh Hòa")
-list.append("Kien Giang")
+list.append("Kiên Giang")
 list.append("Kon Tum")
 list.append("Lai Châu")
 list.append("Lâm Đồng")
@@ -146,6 +146,7 @@ link(a11,"Hòa Bình")
 a12 = "Thái Nguyên"
 link(a12, "Hà Nội")
 link(a12, "Bắc Giang")
+link(a12, "Vĩnh Phúc")
 
 a13 = "Bắc Giang"
 link(a13, "Hà Nội")
@@ -167,6 +168,7 @@ a16 = "Hà Nội"
 link(a16, "Hà Nam")
 link(a16, "Hưng Yên")
 link(a16, "Bắc Ninh")
+link(a16, "Vĩnh Phúc")
 
 a17 = "Bắc Ninh"
 link(a17, "Hưng Yên")
@@ -184,9 +186,11 @@ a20 = "Hà Nam"
 link(a20, "Ninh Bình")
 link(a20, "Nam Định")
 link(a20, "Thái Bình")
+link(a20, "Hưng Yên")
 
 a21 = "Thái Bình"
 link(a21, "Nam Định")
+link(a21, "Hưng Yên")
 
 a22 = "Thanh Hóa"
 link(a22, "Ninh Bình")
@@ -291,13 +295,8 @@ a = "TP. Hồ Chí Minh"
 link(a, "Tiền Giang")
 link(a, "Bà Rịa -Vũng Tàu")
 
-a = "Long An"
-link(a, "TP. Hồ Chí Minh")
-link(a, "Đồng Tháp")
-link(a, "Tiền Giang")
-
 a = "An Giang"
-link(a, "Kien Giang")
+link(a, "Kiên Giang")
 link(a, "Đồng Tháp")
 link(a, "Cần Thơ")
 
@@ -309,9 +308,8 @@ link(a, "Tiền Giang")
 a = "Tiền Giang"
 link(a, "Vĩnh Long")
 link(a, "Bến Tre")
-link(a, "Tiền Giang")
 
-a = "Kien Giang"
+a = "Kiên Giang"
 link(a, "Cần Thơ")
 link(a, "Bạc Liêu")
 link(a, "Hậu Giang")
@@ -333,7 +331,6 @@ link(a, "Trà Vinh")
 a = "Hậu Giang"
 link(a, "Bạc Liêu")
 link(a, "Sóc Trăng")
-link(a, "Tiền Giang")
 
 a = "Sóc Trăng"
 link(a, "Bạc Liêu")
